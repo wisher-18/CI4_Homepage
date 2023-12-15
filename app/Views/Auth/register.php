@@ -84,7 +84,6 @@
 
     </div>
 
-   
-
+</body>
 
 <?= $this->endSection(); ?>

@@ -11,41 +11,51 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 class Content extends BaseController
 {
     private ContentModel $model;
+    private PageModel $pageModel;
     public function __construct()
     {
         $this->model = new ContentModel();
+        $this->pageModel = new PageModel();
     }
+   
     public function index()
     {
+       
+        $pages = $this->pageModel->findAll();
         $content = $this->model->paginate(10);
-        return view("Content/index", ["contents"=> $content,
+       
+        return view("Content/index", ["contents"=> $content, "pages"=>$pages,
         "pager" => $this->model->pager]);
         
     }
     public function new(){
 
-        $pageModel = new PageModel();
+        $pages = $this->pageModel->findAll();
 
-        $data["pageIds"] = $pageModel->select("*")->findAll();
-       
-            
-        return view("Content/newContent", $data, [
-            "content" => new Content, 
+        return view("Content/newContent", ["pages" => $pages,
+            "content" => new Content(), 
            
         ]);
     }
 
     public function create(){
         $postData = new Contents($this->request->getPost());
-        $postImage = $this->request->getFile("content_image");
-        $newName = $postImage->getRandomName();
-        $postImage->move("public/content_images/", $newName);
-        $postData->content_image = $newName;
-
-        $backImage = $this->request->getFile("background_img");
-        $newName2 = $backImage->getRandomName();
-        $backImage->move("public/background_img/", $newName2);
-        $postData->background_img = $newName2;
+       // Check if a new content_image is uploaded
+       $postImage = $this->request->getFile("content_image");
+       if ($postImage->isValid() && $postImage->getSize() > 0) {
+           $newName = $postImage->getRandomName();
+           $postImage->move("public/content_images/", $newName);
+           $postData->content_image = $newName;
+       }
+   
+       // Check if a new background_img is uploaded
+       $backImage = $this->request->getFile("background_img");
+       if ($backImage->isValid() && $backImage->getSize() > 0) {
+           $newName2 = $backImage->getRandomName();
+           $backImage->move("public/background_img/", $newName2);
+           $postData->background_img = $newName2;
+       }
+       
         $id = $this->model->protect(false)->insert($postData);
 
         if($id === false){
@@ -59,9 +69,10 @@ class Content extends BaseController
     }
 
     public function show($id){
+        $pages = $this->pageModel->findAll();
         $content = $this->getContentOr404($id);
 
-        return view("Content/show", ["content" => $content]);
+        return view("Content/show", ["pages"=> $pages, "content" => $content]);
         
 
     }
@@ -74,40 +85,66 @@ class Content extends BaseController
         
             $this->model->delete($id);
 
-            return redirect()->to("content/show")->with("message","Page deleted");
+            return redirect()->to("content/index")->with("message","Page deleted");
     }
 
     public function edit($id){
     
+        $pages = $this->pageModel->findAll();
 
         $content = $this->getContentOr404($id);
 
-        return view("Content/edit", ["content"=> $content]);
+        return view("Content/edit", ["content"=> $content, "pages"=> $pages]);
     }
 
-    public function update($id){
-        //it will find the article in the data by id
+    public function update($id) {
+        // Find the content in the data by id
         $content = $this->getContentOr404($id);
-        
-        //it will assign all the properties at once using fill
-        $content->fill($this->request->getPost());
-        //it will check if any change made to properties
+    
+        // Get all fields except file fields
+        $data = $this->request->getPost();
+        unset($data['content_image']);
+        unset($data['background_img']);
+    
+        // Assign non-file properties at once using fill
+      
+    
+        // Check if a new content_image is uploaded
+        $postImage = $this->request->getFile("content_image");
+        if ($postImage && $postImage->isValid() && $postImage->getSize() > 0) {
+            $newName = $postImage->getRandomName();
+            $postImage->move("public/content_images/", $newName);
+            $content->content_image = $newName;
+        }
+    
+        // Check if a new background_img is uploaded
+        $backImage = $this->request->getFile("background_img");
+        if ($backImage && $backImage->isValid() && $backImage->getSize() > 0) {
+            $newName2 = $backImage->getRandomName();
+            $backImage->move("public/background_img/", $newName2);
+            $content->background_img = $newName2;
+        }
+    
+        // Unset unnecessary property
         $content->__unset("_method");
-
-        if(! $content->hasChanged()){
-            return redirect()->back()
-            ->with("message", "Nothing to update...");
+        $content->fill($data);
+        // Check if any change made to properties
+        if (!$content->hasChanged()) {
+            return redirect()->back()->with("message", "Nothing to update...");
         }
-        //it will save the article
-        if($this->model->save($content)){
-            return redirect()->to("content/index")
-            ->with("message", "Content Updated.");
+       
+    
+        // Save the content only if there are changes
+        if ($this->model->save($content)) {
+            return redirect()->to("content/$id")->with("message", "Content Updated.");
         }
-
-        return redirect()->back()
-        ->with("errors", $this->model->errors())
-        ->withInput();
+    
+        // Handle the case where save fails
+        return redirect()->back()->with("errors", $this->model->errors())->withInput();
     }
+    
+    
+        
 
     private function getContentOr404($id): Contents{
         $content = $this->model->find($id);

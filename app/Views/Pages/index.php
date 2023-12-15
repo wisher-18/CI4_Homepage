@@ -1,10 +1,7 @@
-<?= $this->extend("layouts/default") ?>
+<?= $this->extend("layouts/adminDefault") ?>
 
-<?= $this->section("title") ?>All pages<?= $this->endSection()?>
+<?= $this->section("title") ?>Pages<?= $this->endSection() ?>
 <?= $this->section("content") ?>
-<?= $this->include("Home/navbar")?>
-</div>
-
 
             
             <div class="row justify-content-center">

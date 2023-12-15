@@ -12,10 +12,23 @@ class ContentModel extends Model
     protected $returnType       = \App\Entities\Contents::class;
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
+    protected $feature_data;
     protected $allowedFields    = ["content_title","content_sub_heading",
         "content","content_image","content_section","additional_content",
-        "primary_btn","primary_btn_url","secondary_btn","secondary_btn_url","background_img","pages_id"];
+        "primary_btn","primary_btn_name","primary_btn_url","secondary_btn","secondary_btn_name","secondary_btn_url","background_img","pages_id","feature_data", "feature_count"];
 
+        public function getHeroContent()
+        {
+            return $this->where('content_section', 'hero')->findAll();
+        }
+
+        public function getFeatureContent(){
+            return $this->where('content_section', 'features')->findAll();
+        }
+
+        public function getOtherSectionContent(){
+            return $this->where("content_section", "other_section")->findAll();
+        }
     // Dates
     
     protected $dateFormat    = 'datetime';

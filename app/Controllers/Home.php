@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ContentModel;
+use App\Models\PageModel;
 use App\Models\SectionModel;
 use App\Entities\Section;
 use RuntimeException;
@@ -8,29 +10,49 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Home extends BaseController
 {
+    private ContentModel $contentModel;
     
     public function __construct()
         {
-            
+           
         }
 
     public function index()
     {
-       
-       
-        return view('Home/index', []);
+        $contentModel = new ContentModel();
+        $pageModel = new PageModel;
+            $pages = $pageModel->findAll();
+
+            $heroContent = $contentModel->getHeroContent();
+            $otherSection = $contentModel->getOtherSectionContent();
+            $featureContent = $contentModel->getFeatureContent();
+        return view('Home/index',["pages" => $pages, "heroContents" => $heroContent, "otherSections" => $otherSection,
+        "featureContent" => $featureContent]);
+    }
+    public function features(){
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view('About/about', ["pages" => $pages]);
     }
     public function about(){
-        return view('About/about');
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view('About/about', ["pages" => $pages]);
     }
     public function contact(){
-        return view('Contact/contact');
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view('Contact/contact',["pages" => $pages]);
     }
     public function testimonials(){
-        return view('Testimonials/testimonials');
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view('Testimonials/testimonials',["pages" => $pages]);
     }
     public function pricing(){
-        return view('Pricing/pricing');
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view('Pricing/pricing',["pages" => $pages]);
     }
 
    

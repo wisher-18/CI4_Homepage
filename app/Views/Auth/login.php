@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+<?= $this->extend(config('Auth')->views['layout']) ?>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<?= $this->section('title') ?><?= lang('Auth.login') ?><?= $this->endSection() ?>
 
-    <title>SB Admin 2 - Login</title>
-
-    <!-- Custom fonts for this template-->
-   
-
-</head>
-
+<?= $this->section('main') ?>
 <body class="bg-gradient-primary">
 
     <div class="container">
@@ -28,6 +16,20 @@
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
+                        <?php if (session('error') !== null) : ?>
+                    <div class="alert alert-danger" role="alert"><?= session('error') ?></div>
+                <?php elseif (session('errors') !== null) : ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php if (is_array(session('errors'))) : ?>
+                            <?php foreach (session('errors') as $error) : ?>
+                                <?= $error ?>
+                                <br>
+                            <?php endforeach ?>
+                        <?php else : ?>
+                            <?= session('errors') ?>
+                        <?php endif ?>
+                    </div>
+                <?php endif ?>
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                             <div class="col-lg-6">
@@ -85,5 +87,4 @@
     
 
 </body>
-
-</html>
+<?= $this->endSection(); ?>

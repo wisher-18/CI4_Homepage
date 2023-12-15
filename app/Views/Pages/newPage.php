@@ -1,9 +1,8 @@
-<?= $this->extend("layouts/default") ?>
+<?= $this->extend("layouts/adminDefault") ?>
 
 <?= $this->section("title") ?>Add New Page<?= $this->endSection()?>
 <?= $this->section("content") ?>
-<?= $this->include("Home/navbar")?>
-</div>
+
 
 
             
@@ -40,5 +39,5 @@
                     </div>
                 </div>
 </div>
-<?= $this->include("Home/footer")?>
+
 <?= $this->endSection() ?>

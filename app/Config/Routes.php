@@ -5,11 +5,14 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
-$routes->get("/about", "Home::about");
-$routes->get("/contact", "Home::contact");
-$routes->get("/testimonials", "Home::testimonials");
-$routes->get("/pricing", "Home::pricing");
+$routes->get("/About", "Home::about");
+$routes->get("/Features", "Home::features");
+
+$routes->get("/Contact", "Home::contact");
+$routes->get("/Testimonials", "Home::testimonials");
+$routes->get("/Pricing", "Home::pricing");
 
 $routes->get("/page/new", "Pages::new");
 $routes->post("/page/new", "Pages::create");
@@ -25,9 +28,8 @@ $routes->get("/content/(:num)", "Content::show/$1");
 $routes->get("/content/index", "Content::index");
 $routes->get("/content/delete/(:num)", "Content::delete/$1");
 $routes->get("content/(:num)/edit", "Content::edit/$1");
-$routes->post("content/update/(:num)", "Content::update/$1");
+$routes->patch("content/update/(:num)", "Content::update/$1");
 
 $routes->get("/admin","Admin::index");
 
 service('auth')->routes($routes);
-$routes->get("/admin/register","Admin::signup");

@@ -3,15 +3,16 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\PageModel;
 
 class Admin extends BaseController
 {
     public function index()
     {
-        return view("admin/login");
+        
+        return view("auth/dashboard");
     }
 
-    public function signup(){
-        return view("admin/register");
-    }
+   
+   
 }
