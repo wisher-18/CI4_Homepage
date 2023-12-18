@@ -37,6 +37,46 @@ class Content extends BaseController
            
         ]);
     }
+    public function newHero(){
+
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newHeroForm", ["pages" => $pages,
+            "content" => new Content(), 
+           
+        ]);
+    }
+    public function newOther(){
+
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newOtherForm", ["pages" => $pages,
+            "content" => new Content(), 
+           
+        ]);
+    }
+    public function newFeature(){
+
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newFeatureForm", ["pages" => $pages,
+            "content" => new Content(), 
+           
+        ]);
+    }
+
+    public function newInfo(){
+
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newInfoForm", ["pages" => $pages,
+            "content" => new Content(), 
+           
+        ]);
+    }
+
+
+
 
     public function create(){
         $postData = new Contents($this->request->getPost());
@@ -48,6 +88,28 @@ class Content extends BaseController
            $postData->content_image = $newName;
        }
    
+       // Check if a new background_img is uploaded
+       $backImage = $this->request->getFile("background_img");
+       if ($backImage->isValid() && $backImage->getSize() > 0) {
+           $newName2 = $backImage->getRandomName();
+           $backImage->move("public/background_img/", $newName2);
+           $postData->background_img = $newName2;
+       }
+       
+        $id = $this->model->protect(false)->insert($postData);
+
+        if($id === false){
+            return redirect()->back()->with("errors",
+            $this->model->errors())->withInput();
+        }
+        return redirect()->to("content/$id")->with("message","Content Saved");
+
+
+      
+    }
+    public function createFeature(){
+        $postData = new Contents($this->request->getPost());
+
        // Check if a new background_img is uploaded
        $backImage = $this->request->getFile("background_img");
        if ($backImage->isValid() && $backImage->getSize() > 0) {

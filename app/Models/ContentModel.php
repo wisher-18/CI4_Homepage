@@ -29,7 +29,11 @@ class ContentModel extends Model
         public function getOtherSectionContent(){
             return $this->where("content_section", "other_section")->findAll();
         }
-    // Dates
+        public function geInfoSectionContent(){
+            return $this->where("content_section", "info_section")->findAll();
+        }
+    
+        // Dates
     
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';

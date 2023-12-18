@@ -1,16 +1,17 @@
-<section class="p-5">
+<?php foreach ($featureContent as $feature): ?>
+    <section class="p-5">
     <div class="container">
         <div class="row">
             <div class="title-text">
-                <?php foreach ($featureContent as $feature): ?>
+        
                     <h4><?= $feature->content_sub_heading ?></h4>
                     <h2><?= $feature->content_title ?></h2>
                     <img src="public/images/prostok_t_2.png" alt="">
-                <?php endforeach; ?>
+              
             </div>
         </div>
-        <div class="row">
-            <?php foreach ($featureContent as $feature): ?>
+        <div class="row justify-content-center">
+      
                 <?php
                 // Decode the JSON string from feature_data column
                 $features = json_decode($feature->feature_data, true);
@@ -28,7 +29,8 @@
                     </div>
                 <?php endforeach; ?>
 
-            <?php endforeach; ?>
+           
         </div>
     </div>
 </section>
+<?php endforeach; ?>
