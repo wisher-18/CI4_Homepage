@@ -25,6 +25,7 @@
                                 <thead class="">
                                     <th>Id</th>
                                     <th>Title</th>
+                                    <th>Slugs</th>
                                     <th>Delete</th>
                                     <th>Edit</th>
                                 </thead>
@@ -33,6 +34,7 @@
                                     <tr>
                                     <td><?= esc($page->page_id) ?></td>
                                     <td><?= esc($page->page_title) ?></td>
+                                    <td><?= esc($page->slug) ?></td>
                                     <td><a class="btn btn-outline-danger" 
                                     href="javascript:void(0);"
                                         onclick="confirmDelete(<?= $page->page_id ?>)">Delete</a></td>

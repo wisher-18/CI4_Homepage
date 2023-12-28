@@ -20,15 +20,20 @@
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
+                    <?php if (session('message') !== null) : ?>
+                        <div class="alert alert-success" role="alert">
+                            <?= session('message') ?>
+                        </div>
+                    <?php endif ?>
                         <h2>Add A New Page</h2>
                         <div class="col-10">
                             <div class="form-group">
-                                <?= form_open("/page/update/".$page->page_id) ?>
+                                <?= form_open("/page/update/".$pages->page_id) ?>
             
                                 <div class="mb-3">
                                     <label for="page_title" class="form-label">Page Title</label>
                                     <input type="text" name="page_title" id="page_title" class="form-control"
-                                        value="<?= old("page_title", esc($page->page_title)) ?>" placeholder="Enter title of the page">
+                                        value="<?= old("page_title", esc($pages->page_title)) ?>" placeholder="Enter title of the page">
                                 </div>
                                 
                                 <div class="mb-3">

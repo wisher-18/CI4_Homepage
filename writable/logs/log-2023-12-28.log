@@ -1,0 +1,1384 @@
+INFO - 2023-12-28 06:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 06:44:46 --> CodeIgniter\Entity\Entity::__construct(): Argument #1 ($data) must be of type ?array, string given, called in C:\xampp\htdocs\hometest\app\Controllers\Pages.php on line 29
+in SYSTEMPATH\Entity\Entity.php on line 129.
+ 1 APPPATH\Controllers\Pages.php(29): CodeIgniter\Entity\Entity->__construct('Demo')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 06:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 06:47:38 --> Undefined variable $pages
+in APPPATH\Views\Home\navbar.php on line 18.
+ 1 APPPATH\Views\Home\navbar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Home/navbar', null, true)
+ 5 APPPATH\Views\Pages\edit.php(5): CodeIgniter\View\View->include('Home/navbar')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Pages/edit', [], true)
+ 9 APPPATH\Controllers\Pages.php(71): view('Pages/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->edit('28')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 06:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 06:49:16 --> Undefined variable $page
+in APPPATH\Views\Pages\edit.php on line 26.
+ 1 APPPATH\Views\Pages\edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Pages/edit', [], true)
+ 5 APPPATH\Controllers\Pages.php(71): view('Pages/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->edit('28')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 06:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 06:49:18 --> Undefined variable $page
+in APPPATH\Views\Pages\edit.php on line 26.
+ 1 APPPATH\Views\Pages\edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Pages/edit', [], true)
+ 5 APPPATH\Controllers\Pages.php(71): view('Pages/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->edit('28')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 06:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 06:50:54 --> Undefined variable $pages
+in APPPATH\Views\Home\navbar.php on line 18.
+ 1 APPPATH\Views\Home\navbar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Home/navbar', null, true)
+ 5 APPPATH\Views\Pages\edit.php(5): CodeIgniter\View\View->include('Home/navbar')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\edit.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Pages/edit', [], true)
+ 9 APPPATH\Controllers\Pages.php(71): view('Pages/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->edit('28')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 06:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 06:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:02:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1726.
+ 1 SYSTEMPATH\BaseModel.php(1726): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pages.php(89): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->update('29')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:02:40 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1726.
+ 1 SYSTEMPATH\BaseModel.php(1726): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pages.php(89): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->update('29')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:06:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1726.
+ 1 SYSTEMPATH\BaseModel.php(1726): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pages.php(97): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->update('31')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:15:08 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\Home\index.php(6): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+10 APPPATH\Controllers\Home.php(31): view('Home/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:15:18 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\Features\features.php(5): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Features\\features.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Features/features', [], true)
+10 APPPATH\Controllers\Home.php(37): view('Features/features', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->features()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:28:09 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\Home\index.php(6): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+10 APPPATH\Controllers\Home.php(31): view('Home/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:34:02 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\Home\index.php(6): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+10 APPPATH\Controllers\Home.php(31): view('Home/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:34:05 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\About\about.php(6): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\About\\about.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('About/about', [], true)
+10 APPPATH\Controllers\Home.php(42): view('About/about', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->about()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:35:24 --> Call to undefined method App\Models\PageModel::findBySlug
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pages.php(52): CodeIgniter\Model->__call('findBySlug', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:36:42 --> Attempt to read property "page_title" on array
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on array', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:37 --> The route for "our story 2" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 489.
+ 1 SYSTEMPATH\Helpers\url_helper.php(489): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('our story 2')
+ 2 APPPATH\Views\Home\navbar.php(20): url_to('our story 2')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/navbar', null, true)
+ 6 APPPATH\Views\Pages\slugs.php(8): CodeIgniter\View\View->include('home/navbar')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+10 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:37:48 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:48 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:48 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:48 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:37:50 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:50 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:50 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:37:50 --> Attempt to read property "page_title" on null
+in APPPATH\Views\Pages\slugs.php on line 3.
+ 1 APPPATH\Views\Pages\slugs.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_title" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 5 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:37:53 --> Undefined variable $heroContents
+in APPPATH\Views\Home\homeSection.php on line 4.
+ 1 APPPATH\Views\Home\homeSection.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/homeSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(10): CodeIgniter\View\View->include('home/homeSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:40:20 --> Undefined variable $heroContents
+in APPPATH\Views\Home\homeSection.php on line 4.
+ 1 APPPATH\Views\Home\homeSection.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/homeSection', null, true)
+ 5 APPPATH\Views\Home\index.php(8): CodeIgniter\View\View->include('home/homeSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Pages.php(59): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:40:22 --> Undefined variable $heroContents
+in APPPATH\Views\Home\homeSection.php on line 4.
+ 1 APPPATH\Views\Home\homeSection.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/homeSection', null, true)
+ 5 APPPATH\Views\Home\index.php(8): CodeIgniter\View\View->include('home/homeSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Pages.php(59): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('about')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 07:40:26 --> Undefined variable $heroContents
+in APPPATH\Views\Home\homeSection.php on line 4.
+ 1 APPPATH\Views\Home\homeSection.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\homeSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/homeSection', null, true)
+ 5 APPPATH\Views\Home\index.php(8): CodeIgniter\View\View->include('home/homeSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Pages.php(59): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:40:42 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 07:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 07:41:09 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 07:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:00:29 --> Call to undefined method App\Models\ContentModel::getFeaturesByPage
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pages.php(55): CodeIgniter\Model->__call('getFeaturesByPage', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('pricing')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:01:21 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:01:21 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:02:07 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:02:07 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-28 08:04:14 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:04:14 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-28 08:04:14 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:04:14 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-28 08:04:15 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:04:15 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:04:41 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:04:41 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-28 08:06:17 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:06:17 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:06:45 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 17.
+ 1 APPPATH\Views\Home\featuresSection.php(17): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:06:45 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 20.
+ 1 APPPATH\Views\Home\featuresSection.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:15:04 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:15:04 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:15:30 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:15:30 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:15:32 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:15:32 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:16:31 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:16:31 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-28 08:16:42 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:16:42 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Home\featuresSection.php on line 25.
+ 1 APPPATH\Views\Home\featuresSection.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-28 08:16:55 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Views\Home\featuresSection.php on line 21.
+ 1 APPPATH\Views\Home\featuresSection.php(21): json_decode(null, true)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\featuresSection.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/featuresSection', null, true)
+ 5 APPPATH\Views\Pages\slugs.php(12): CodeIgniter\View\View->include('home/featuresSection')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Pages\\slugs.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/slugs', [], true)
+ 9 APPPATH\Controllers\Pages.php(72): view('pages/slugs', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('home')
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:16:55 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:17:22 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:19:20 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:21:52 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:21:52 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:21:52 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:21:52 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:27:42 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:27:42 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:27:42 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:27:42 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:30:51 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('public', 'images', 'prostok_t_2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:31:12 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:31:12 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:31:12 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:31:12 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:37:12 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:12 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:12 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:12 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 08:37:14 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:14 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:14 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 08:37:14 --> Undefined variable $heroContent
+in APPPATH\Controllers\Pages.php on line 72.
+ 1 APPPATH\Controllers\Pages.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $heroContent', 'C:\\xampp\\htdocs\\hometest\\app\\Controllers\\Pages.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pages->showSlug('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 08:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 08:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:13:46 --> Undefined variable $whyUsContents
+in APPPATH\Views\Home\whyUs.php on line 12.
+ 1 APPPATH\Views\Home\whyUs.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $whyUsContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/whyUs', null, true)
+ 5 APPPATH\Views\Home\index.php(16): CodeIgniter\View\View->include('home/whyUs')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Home.php(31): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 10:14:56 --> Undefined variable $whyUsContents
+in APPPATH\Views\Home\whyUs.php on line 12.
+ 1 APPPATH\Views\Home\whyUs.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $whyUsContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/whyUs', null, true)
+ 5 APPPATH\Views\Home\index.php(16): CodeIgniter\View\View->include('home/whyUs')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Home.php(31): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 10:16:12 --> Undefined variable $whyUsContents
+in APPPATH\Views\Home\whyUs.php on line 12.
+ 1 APPPATH\Views\Home\whyUs.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $whyUsContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/whyUs', null, true)
+ 5 APPPATH\Views\Home\index.php(16): CodeIgniter\View\View->include('home/whyUs')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-28 10:16:13 --> Undefined variable $whyUsContents
+in APPPATH\Views\Home\whyUs.php on line 12.
+ 1 APPPATH\Views\Home\whyUs.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $whyUsContents', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\whyUs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('home/whyUs', null, true)
+ 5 APPPATH\Views\Home\index.php(16): CodeIgniter\View\View->include('home/whyUs')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Home\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Home/index', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('Home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:21:54 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:21:54 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:21:54 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:21:54 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:22:21 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:22:21 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 10:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:22:21 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 10:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 10:22:21 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()

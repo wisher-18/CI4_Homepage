@@ -30,13 +30,20 @@ $routes->get("/content/delete/(:num)", "Content::delete/$1");
 $routes->get("content/(:num)/edit", "Content::edit/$1");
 $routes->patch("content/update/(:num)", "Content::update/$1");
 
-$routes->get("/content/newHero", "Content::newHero");
+$routes->get('content/newHero/', 'Content::newHero');
+
+$routes->get("content/(:num)/editHero", "Content::editHero/$1");
 $routes->get("/content/newFeature", "Content::newFeature");
 $routes->post("/content/newFeature", "Content::createFeature");
-$routes->post("/content/newHero", "Content::createHero");
+
 $routes->get("/content/newOther", "Content::newOther");
 $routes->post("/content/newOther", "Content::create");
 $routes->get("/content/newInfo", "Content::newInfo");
+$routes->get("/content/newPricing", "Content::newPricing");
+$routes->post("/content/newPricing", "Content::createPricing");
+$routes->get("/content/newWhyUs", "Content::newWhyUs");
+
+$routes->get("page/(:any)", "Pages::showSlug/$1");
 
 
 $routes->get("/admin","Admin::index");

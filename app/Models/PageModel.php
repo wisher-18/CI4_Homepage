@@ -12,7 +12,19 @@ class PageModel extends Model
     protected $returnType       = \App\Entities\Page::class;
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["page_title"];
+    protected $allowedFields    = ["page_title", "slug"];
+
+    public function slug($string){
+        helper("url");
+        $slug = url_title($string, "-", true);
+        return $slug;
+    }
+
+    public function findBySlug($slug)
+    {
+       
+        return $this->where('slug', $slug)->first();
+    }
 
     // Dates
     protected $useTimestamps = false;

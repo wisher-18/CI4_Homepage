@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ContentModel;
 use App\Models\PageModel;
 use App\Entities\Page;
 use CodeIgniter\Exceptions\PageNotFoundException;
@@ -10,9 +11,11 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 class Pages extends BaseController
 {
     private PageModel $model;
+    private ContentModel $contentModel;
     public function __construct()
     {
         $this->model = new PageModel();
+        $this->contentModel = new ContentModel();
     }
     public function index()
     {
@@ -25,16 +28,50 @@ class Pages extends BaseController
         ]);
     }
 
-    public function create(){
-        $page = new Page($this->request->getPost());
-        $id = $this->model->insert($page);
-        if($id){
+    public function create()
+    {
+        $page = $this->request->getPost("page_title");
+        $slug = $this->model->slug($page);
+        $data = [
+            'page_title' => $page,
+            'slug'       => $slug
+        ];
+    
+        $id = $this->model->insert($data);
+    
+        if ($id) {
             return redirect()->to("page/show")->with("message", "Page added.");
         }
-        
-        return redirect()->back()->with("errors",$this->model->errors());
-        
+    
+        return redirect()->back()->with("errors", $this->model->errors());
     }
+
+    public function showSlug($slug){
+     
+        $pages = $this->model->findAll(); 
+        $page = $this->model->findBySlug($slug);
+        if ($page && is_object($page)) {
+            $heroContent = $this->contentModel->getHeroByPage($page->page_id);
+            $otherSection = $this->contentModel->getOtherByPage($page->page_id);
+            $featureContent = $this->contentModel->getFeaturesByPage($page->page_id);
+            $infoContents = $this->contentModel->getInfoByPage($page->page_id);
+            $pricingContents = $this->contentModel->getPricingByPage($page->page_id);
+       
+       
+        } else {
+            $sectionAs = [];
+            $sectionBs = [];
+            $sectionCs = [];
+            $sectionDs = [];
+            $sectionEs = [];
+            $sectionFs = [];
+        }
+        if($pages == $page){
+            $this->contentModel->findAll();
+        }
+        return view("pages/slugs", ['pages'=>$pages,'page'=>$page, "heroContents" => $heroContent, "otherSections" => $otherSection,
+        "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents]);
+       }
 
     public function show(){
         // $pages = $this->getPageOr404($id);
@@ -43,10 +80,12 @@ class Pages extends BaseController
 
     }
 
+
+
     public function confirmDelete($id){
         $page = $this->getPageOr404($id);
 
-        return view("Pages/delete", ["page"=> $page]);
+        return view("Pages/delete", ["pages"=> $page]);
     }
 
     public function delete($id){
@@ -63,31 +102,44 @@ class Pages extends BaseController
 
         $page = $this->getPageOr404($id);
 
-        return view("Pages/edit", ["page"=> $page]);
+        return view("Pages/edit", ["pages"=> $page]);
     }
 
-    public function update($id){
-        //it will find the article in the data by id
+    public function update($id)
+    {
+        // Find the page in the data by id
         $page = $this->getPageOr404($id);
-        //it will assign all the properties at once using fill
-        $page->fill($this->request->getPost());
-        //it will check if any change made to properties
-        $page->__unset("_method");
-
-        if(! $page->hasChanged()){
-            return redirect()->back()
-            ->with("message", "Nothing to update...");
+    
+        // Get the new page title
+        $pageTitle = $this->request->getPost('page_title');
+    
+        // Generate a slug based on the new page title
+        $slug = $this->model->slug($pageTitle);
+    
+        // Check if any changes are made
+        if ($page->page_title === $pageTitle && $page->slug === $slug) {
+            // No changes, redirect with a message
+            return redirect()->back()->with("message", "Nothing to update...");
         }
-        //it will save the article
-        if($this->model->save($page)){
-            return redirect()->to("page/show")
-            ->with("message", "Article Updated.");
+    
+        // Update the page data
+        $data = [
+            'page_title' => $pageTitle,
+            'slug'       => $slug
+        ];
+    
+        $this->model->update($id, $data);
+    
+        // Check if any rows were affected
+        if ($this->model->affectedRows() > 0) {
+            // Rows affected, redirect with a success message
+            return redirect()->to("page/show")->with("message", "Page Updated.");
+        } else {
+            // No rows affected, redirect with a message
+            return redirect()->back()->with("message", "Nothing to update...");
         }
-
-        return redirect()->back()
-        ->with("errors", $this->model->errors())
-        ->withInput();
     }
+    
 
     private function getPageOr404($id): Page{
         $page = $this->model->find($id);

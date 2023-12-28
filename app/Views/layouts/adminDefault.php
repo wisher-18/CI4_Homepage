@@ -63,7 +63,7 @@
         <!-- Heading -->
         
         
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages2"
                 aria-expanded="true" aria-controls="collapsePages2">
                 <i class="fa-solid fa-file-signature"></i>
@@ -73,15 +73,15 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Edit Contents:</h6>
                     <a class="collapse-item" href="<?= url_to("Content::new")?>">Add Content</a>
-                    <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Content</a>
+                    <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Content</a> -->
                     <!-- <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Other Pages:</h6>
                     <a class="collapse-item" href="404.html">404 Page</a>
                     <a class="collapse-item" href="blank.html">Blank Page</a> -->
-                </div>
+                <!-- </div>
             </div>
-        </li>
+        </li> -->
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -98,21 +98,46 @@
                 </div>
             </div>
         </li>
+        <?php foreach($pages as $page): ?>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages3"
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#<?= $page->page_title?>"
+                aria-expanded="true" aria-controls="<?= $page->page_title?>">
+                <i class="fas fa-fw fa-folder"></i>
+                <span><?= $page->page_title ?></span>
+            </a>
+            <div id="<?= $page->page_title?>" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Edit <?= $page->page_title?> Page Content:</h6>
+                    <a class="collapse-item" href="<?= site_url("content/newHero/{$page->page_id}") ?>">Add Hero</a>
+
+                    <a class="collapse-item" href="<?= site_url("content/newFeature/{$page->page_id}") ?>">Add Feature Section</a>
+                    <a class="collapse-item" href="<?=site_url("content/newInfo/{$page->page_id}") ?>">Add Info Section</a>
+                    <a class="collapse-item" href="<?= site_url("content/newOther/{$page->page_id}") ?>">Add Other Section</a>
+                    <a class="collapse-item" href="<?= site_url("content/newPricing/{$page->page_id}") ?>">Add Pricing Section</a>
+                    <a class="collapse-item" href="<?= site_url("content/newWhyUs/{$page->page_id}") ?>">Add Why-Us Section</a>
+                    
+                    <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Home Page Content</a>
+   
+                </div>
+            </div>
+        </li>
+        <?php endforeach; ?>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages4"
                 aria-expanded="true" aria-controls="collapsePages3">
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Home</span>
+                <span>Pricing</span>
             </a>
-            <div id="collapsePages3" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div id="collapsePages4" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Edit Home Page Content:</h6>
                     <a class="collapse-item" href="<?= url_to("Content::newHero")?>">Add Hero</a>
                     <a class="collapse-item" href="<?= url_to("Content::newFeature")?>">Add Feature Section</a>
                     <a class="collapse-item" href="<?= url_to("Content::newInfo")?>">Add Info Section</a>
                     <a class="collapse-item" href="<?= url_to("Content::newOther")?>">Add Other Section</a>
+                    <a class="collapse-item" href="<?= url_to("Content::newPricing")?>">Add Pricing Section</a>
                     
-                    <a class="collapse-item" href="<?= url_to("Pages::show") ?>">View All Home Page Content</a>
+                    <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Home Page Content</a>
    
                 </div>
             </div>

@@ -29,8 +29,50 @@ class ContentModel extends Model
         public function getOtherSectionContent(){
             return $this->where("content_section", "other_section")->findAll();
         }
-        public function geInfoSectionContent(){
+        public function getInfoSectionContent(){
             return $this->where("content_section", "info_section")->findAll();
+        }
+        public function getPricingSectionContent(){
+            return $this->where("content_section", "pricing_section")
+            ->where("pages_id", "15")
+            ->findAll();
+        }
+
+        public function getWhyUsSectionContent(){
+            return $this->where("content_section", "why_us_section")
+            ->where("pages_id", "15")
+            ->findAll();
+        }
+
+        public function getHeroByPage($page_id){
+            return $this->where("content_section", "hero")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+
+        
+        public function getFeaturesByPage($page_id){
+            return $this->where("content_section", "features")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+
+        public function getOtherByPage($page_id){
+            return $this->where("content_section", "other_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+
+        public function getInfoByPage($page_id){
+            return $this->where("content_section", "info_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+
+        public function getPricingByPage($page_id){
+            return $this->where("content_section", "pricing_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
         }
     
         // Dates

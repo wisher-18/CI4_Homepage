@@ -95,8 +95,9 @@
                     </div>
 
                     <input type="hidden" name="content_section" id="content_section" value="hero">
-                    <input type="hidden" name="pages_id" id="pages_id" value="15">
-
+                   
+                    <input type="hidden" name="pages_id" id="pages_id" value="<?= $paging->page_id ?>">
+                   
                     <div class="mb-3">
                         <button class="btn btn-outline-primary" >Submit</button>
                     </div>

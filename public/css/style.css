@@ -130,20 +130,7 @@ font-family: "Source Sans Pro";
     position: relative;
 }
 
-.nav-item::after {
-    content: url('../images/prostok_t_2.png');
-    display: none;
-    position: absolute;
-    top: 50%;
-    /* Adjust this value to control the distance between the item and the image */
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.nav-item:hover::after,
-.nav-item.active::after {
-    display: block;
-}
 
 body > div > header > nav > div{
     padding-left:0px !important;
@@ -169,6 +156,7 @@ body > div > header > nav > div{
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    
 }
 .secondaryView-button{
     float: left;
@@ -328,19 +316,124 @@ text-align: center;
 
 /* About section */
 
-.about-us{
-    height: auto;
-    width: 100%;
-}
-.about-para{
-        padding-left: 0px !important;
-}
-.about-us img{
-    max-height: 630px;
-    max-width: 800px;
-    border-radius: 10px;
-}
+.about_section {
+    /* background-color: #00204a;
+    color: #ffffff; */
+  }
+  
+  .about_section .heading_container {
+    margin-bottom: 45px;
+  }
+  
+  .about_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .about_section .img-box img {
+    max-width: 100%;
+  }
+  
+  .about_section .detail-box h3 {
+    font-weight: bold;
+  }
+  
+  .about_section .detail-box p {
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #00bbf0;
+    color: #ffffff;
+    border-radius: 0px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a:hover {
+    background-color: #007fa4;
+  }
 
+  
+  .why_section .box {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  
+  .why_section .box .img-box {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    border-radius: 100%;
+    border: 5px solid #00204a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .why_section .box .img-box img {
+    width: 55px;
+    height: auto;
+    fill: #00204a;
+  }
+  
+  .why_section .box h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .why_section .box p {
+    margin-bottom: 0;
+  }
+  
+  .why_section .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 45px;
+  }
+  
+  .why_section .btn-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #00bbf0;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .why_section .btn-box a:hover {
+    background-color: #007fa4;
+  }
+  
 /* About section Ends */
 
 /* Contact Section */

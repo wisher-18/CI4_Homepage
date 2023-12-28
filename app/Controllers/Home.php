@@ -26,14 +26,17 @@ class Home extends BaseController
             $heroContent = $contentModel->getHeroContent();
             $otherSection = $contentModel->getOtherSectionContent();
             $featureContent = $contentModel->getFeatureContent();
-            $infoContents = $contentModel->geInfoSectionContent();
+            $infoContents = $contentModel->getInfoSectionContent();
+            $pricingContents = $contentModel->getPricingSectionContent();
+            $whyUsContents = $contentModel->getWhyUsSectionContent();
         return view('Home/index',["pages" => $pages, "heroContents" => $heroContent, "otherSections" => $otherSection,
-        "featureContent" => $featureContent, "infoContents" => $infoContents]);
+        "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents,
+        "whyUsContents" => $whyUsContents]);
     }
     public function features(){
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
-        return view('About/about', ["pages" => $pages]);
+        return view('Features/features', ["pages" => $pages]);
     }
     public function about(){
         $pageModel = new PageModel;

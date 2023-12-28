@@ -37,21 +37,21 @@ class Content extends BaseController
            
         ]);
     }
-    public function newHero(){
-
+    public function newHero($id){
+      
         $pages = $this->pageModel->findAll();
-
-        return view("Content/newHeroForm", ["pages" => $pages,
-            "content" => new Content(), 
-           
-        ]);
+        $page = $this->pageModel->find($id);
+        
+      
+        return view("Content/newHeroForm", ["pages" => $pages, "paging" => $page]);
     }
+    
     public function newOther(){
 
         $pages = $this->pageModel->findAll();
 
         return view("Content/newOtherForm", ["pages" => $pages,
-            "content" => new Content(), 
+            
            
         ]);
     }
@@ -60,7 +60,7 @@ class Content extends BaseController
         $pages = $this->pageModel->findAll();
 
         return view("Content/newFeatureForm", ["pages" => $pages,
-            "content" => new Content(), 
+            
            
         ]);
     }
@@ -70,9 +70,28 @@ class Content extends BaseController
         $pages = $this->pageModel->findAll();
 
         return view("Content/newInfoForm", ["pages" => $pages,
-            "content" => new Content(), 
+            
            
         ]);
+    }
+
+    public function newPricing(){
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newPricingForm", ["pages" => $pages,
+            
+           
+        ]);
+
+
+    }
+
+    public function newWhyUs(){
+        $pages = $this->pageModel->findAll();
+
+        return view("Content/newWhyUsForm", ["pages" => $pages]);
+
+
     }
 
 
@@ -130,6 +149,29 @@ class Content extends BaseController
       
     }
 
+    public function createPricing(){
+        $postData = new Contents($this->request->getPost());
+
+       // Check if a new background_img is uploaded
+       $backImage = $this->request->getFile("background_img");
+       if ($backImage->isValid() && $backImage->getSize() > 0) {
+           $newName2 = $backImage->getRandomName();
+           $backImage->move("public/background_img/", $newName2);
+           $postData->background_img = $newName2;
+       }
+       
+        $id = $this->model->protect(false)->insert($postData);
+
+        if($id === false){
+            return redirect()->back()->with("errors",
+            $this->model->errors())->withInput();
+        }
+        return redirect()->to("content/$id")->with("message","Content Saved");
+
+
+      
+    }
+
     public function show($id){
         $pages = $this->pageModel->findAll();
         $content = $this->getContentOr404($id);
@@ -155,21 +197,39 @@ class Content extends BaseController
         $pages = $this->pageModel->findAll();
 
         $content = $this->getContentOr404($id);
+        if($content->content_section === "hero"){
+            return view("Content/editHeroForm", ["content"=> $content, "pages"=> $pages]);
+        }
+
+        if($content->content_section === "features"){
+            return view("Content/editFeatureForm", ["content"=> $content, "pages"=> $pages]);
+        }
+        if($content->content_section === "info_section"){
+            return view("Content/editInfoForm", ["content"=> $content, "pages"=> $pages]);
+        }
+        if($content->content_section === "other_section"){
+            return view("Content/editOtherForm", ["content"=> $content, "pages"=> $pages]);
+        }
+        if($content->content_section === "pricing_section"){
+            return view("Content/editPricingForm", ["content"=> $content, "pages"=> $pages]);
+        }
+
 
         return view("Content/edit", ["content"=> $content, "pages"=> $pages]);
     }
 
-    public function update($id) {
+
+    public function update($id)
+    {
         // Find the content in the data by id
         $content = $this->getContentOr404($id);
+
+        $originalContent = clone $content;
     
         // Get all fields except file fields
         $data = $this->request->getPost();
         unset($data['content_image']);
         unset($data['background_img']);
-    
-        // Assign non-file properties at once using fill
-      
     
         // Check if a new content_image is uploaded
         $postImage = $this->request->getFile("content_image");
@@ -189,21 +249,21 @@ class Content extends BaseController
     
         // Unset unnecessary property
         $content->__unset("_method");
+     
         $content->fill($data);
-        // Check if any change made to properties
-        if (!$content->hasChanged()) {
-            return redirect()->back()->with("message", "Nothing to update...");
-        }
-       
-    
-        // Save the content only if there are changes
-        if ($this->model->save($content)) {
-            return redirect()->to("content/$id")->with("message", "Content Updated.");
-        }
-    
-        // Handle the case where save fails
+
+            // Check if any change made to properties
+            if(!$content->hasChanged()) {
+                return redirect()->to("content/$id")->with("message", "Nothing to update...");
+            }else{
+                $this->model->save($content);
+                return redirect()->to("content/$id")->with("message", "Content Updated.");
+            }
+
         return redirect()->back()->with("errors", $this->model->errors())->withInput();
     }
+    
+    
     
     
         
