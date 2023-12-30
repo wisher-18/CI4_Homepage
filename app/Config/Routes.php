@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->setAutoRoute(true);
+
 $routes->get('/', 'Home::index');
 $routes->get("/About", "Home::about");
 $routes->get("/Features", "Home::features");
@@ -27,23 +27,25 @@ $routes->post("/content/new", "Content::create");
 $routes->get("/content/(:num)", "Content::show/$1");
 $routes->get("/content/index", "Content::index");
 $routes->get("/content/delete/(:num)", "Content::delete/$1");
-$routes->get("content/(:num)/edit", "Content::edit/$1");
-$routes->patch("content/update/(:num)", "Content::update/$1");
+$routes->get("content/edit/(:num)", "Content::edit/$1");
+$routes->post("content/update/(:num)", "Content::update/$1");
 
-$routes->get('content/newHero/', 'Content::newHero');
+$routes->get("content/newHero/(:num)", "Content::newHero/$1");
 
 $routes->get("content/(:num)/editHero", "Content::editHero/$1");
-$routes->get("/content/newFeature", "Content::newFeature");
+$routes->get("/content/newFeature/(:num)", "Content::newFeature/$1");
 $routes->post("/content/newFeature", "Content::createFeature");
 
-$routes->get("/content/newOther", "Content::newOther");
+$routes->get("/content/newOther/(:num)", "Content::newOther/$1");
 $routes->post("/content/newOther", "Content::create");
-$routes->get("/content/newInfo", "Content::newInfo");
-$routes->get("/content/newPricing", "Content::newPricing");
+$routes->get("/content/newInfo/(:num)", "Content::newInfo/$1");
+$routes->get("/content/newPricing/(:num)", "Content::newPricing/$1");
 $routes->post("/content/newPricing", "Content::createPricing");
-$routes->get("/content/newWhyUs", "Content::newWhyUs");
+$routes->get("/content/newWhyUs/(:num)", "Content::newWhyUs/$1");
+$routes->get("/content/newAbout/(:num)", "Content::newAbout/$1");
+$routes->get("/content/newTestimonial/(:num)", "Content::newTestimonial/$1");
 
-$routes->get("page/(:any)", "Pages::showSlug/$1");
+$routes->get("pages/(:any)", "Pages::showSlug/$1");
 
 
 $routes->get("/admin","Admin::index");

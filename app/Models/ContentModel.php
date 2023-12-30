@@ -42,7 +42,20 @@ class ContentModel extends Model
             return $this->where("content_section", "why_us_section")
             ->where("pages_id", "15")
             ->findAll();
+        
         }
+        public function getAboutUsContent(){
+            return $this->where("content_section", "about_section")
+            ->where("pages_id" , "15")
+            ->findAll();
+        }
+        public function getTestimonialContent(){
+            return $this->where("content_section", "testimonial_section")
+            ->where("pages_id" , "15")
+            ->findAll();
+        }
+
+
 
         public function getHeroByPage($page_id){
             return $this->where("content_section", "hero")
@@ -74,6 +87,22 @@ class ContentModel extends Model
             ->where("pages_id", $page_id)
             ->findAll();
         }
+        public function getWhyUsByPage($page_id){
+            return $this->where("content_section", "why_us_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+        public function getAboutusByPage($page_id){
+            return $this->where("content_section", "about_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+        public function getTestimonialByPage($page_id){
+            return $this->where("content_section", "testimonial_section")
+            ->where("pages_id", $page_id)
+            ->findAll();
+        }
+        
     
         // Dates
     

@@ -11,7 +11,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 40px;
-    height: 500px;
+    height: 600px;
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -27,7 +28,7 @@
   }
 
   .pricing-header {
-    color: #007bff;
+    color: #008ed6;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -69,8 +70,10 @@
   }
 </style>
 </div>
+<?php if($pricingContents): ?>
 <section class="pricing">
   <div class="container">
+    <h2>Our Plans</h2>
     <div class="row">
       <?php foreach ($pricingContents as $content): ?>
         <div class="col-md-4">
@@ -107,3 +110,4 @@
     </div>
   </div>
 </section>
+<?php endif; ?>

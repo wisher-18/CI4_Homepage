@@ -56,6 +56,9 @@ class Pages extends BaseController
             $featureContent = $this->contentModel->getFeaturesByPage($page->page_id);
             $infoContents = $this->contentModel->getInfoByPage($page->page_id);
             $pricingContents = $this->contentModel->getPricingByPage($page->page_id);
+            $whyUsContents = $this->contentModel->getWhyUsByPage($page->page_id);
+            $aboutUsContents = $this->contentModel->getAboutusByPage($page->page_id);
+            $testimonialContents = $this->contentModel->getTestimonialByPage($page->page_id);
        
        
         } else {
@@ -69,8 +72,10 @@ class Pages extends BaseController
         if($pages == $page){
             $this->contentModel->findAll();
         }
+        
         return view("pages/slugs", ['pages'=>$pages,'page'=>$page, "heroContents" => $heroContent, "otherSections" => $otherSection,
-        "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents]);
+        "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents,
+    "whyUsContents" => $whyUsContents, "aboutUsContents" => $aboutUsContents, "testimonialContents" => $testimonialContents]);
        }
 
     public function show(){
@@ -82,11 +87,7 @@ class Pages extends BaseController
 
 
 
-    public function confirmDelete($id){
-        $page = $this->getPageOr404($id);
 
-        return view("Pages/delete", ["pages"=> $page]);
-    }
 
     public function delete($id){
         $page = $this->getPageOr404($id);
@@ -139,6 +140,8 @@ class Pages extends BaseController
             return redirect()->back()->with("message", "Nothing to update...");
         }
     }
+
+    
     
 
     private function getPageOr404($id): Page{

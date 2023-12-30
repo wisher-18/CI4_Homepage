@@ -64,7 +64,7 @@
 
                     <input type="hidden" name="feature_data" id="feature_data" value="">
                     <input type="hidden" name="content_section" id="content_section" value="info_section">
-                    <input type="hidden" name="pages_id" id="pages_id" value="15">
+                    <input type="hidden" name="pages_id" id="pages_id" value="<?= $paging->page_id ?>">
 
                     <div class="mb-3">
                         <button class="btn btn-outline-primary" onclick="prepareFormData()">Submit</button>

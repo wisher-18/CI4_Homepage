@@ -1,3 +1,4 @@
+</div> 
 <?php foreach ($featureContent as $feature): ?>
     <section class="p-5">
     <div class="container">

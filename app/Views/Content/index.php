@@ -80,7 +80,7 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-outline-primary"
-                                        href="<?= route_to("Content::edit", $content->content_id) ?>">Edit</a>
+                                        href="<?= base_url("content/edit/".$content->content_id) ?>">Edit</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -98,7 +98,7 @@
 
         if (confirmation) {
             // User clicked "OK," proceed with the deletion
-            window.location.href = "<?= route_to("/content/delete/") ?>" + contentId;
+            window.location.href = "<?= base_url("/content/delete/") ?>" + contentId;
         } else {
             // User clicked "Cancel," do nothing
         }

@@ -98,23 +98,27 @@
                 </div>
             </div>
         </li>
+      
         <?php foreach($pages as $page): ?>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#<?= $page->page_title?>"
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#<?= $page->slug?>"
                 aria-expanded="true" aria-controls="<?= $page->page_title?>">
                 <i class="fas fa-fw fa-folder"></i>
                 <span><?= $page->page_title ?></span>
+                
             </a>
-            <div id="<?= $page->page_title?>" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div id="<?= $page->slug?>" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Edit <?= $page->page_title?> Page Content:</h6>
-                    <a class="collapse-item" href="<?= site_url("content/newHero/{$page->page_id}") ?>">Add Hero</a>
+                    <a class="collapse-item" href="<?= base_url("content/newHero/".$page->page_id) ?>">Add Hero</a>
 
-                    <a class="collapse-item" href="<?= site_url("content/newFeature/{$page->page_id}") ?>">Add Feature Section</a>
-                    <a class="collapse-item" href="<?=site_url("content/newInfo/{$page->page_id}") ?>">Add Info Section</a>
-                    <a class="collapse-item" href="<?= site_url("content/newOther/{$page->page_id}") ?>">Add Other Section</a>
-                    <a class="collapse-item" href="<?= site_url("content/newPricing/{$page->page_id}") ?>">Add Pricing Section</a>
-                    <a class="collapse-item" href="<?= site_url("content/newWhyUs/{$page->page_id}") ?>">Add Why-Us Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newFeature/".$page->page_id) ?>">Add Feature Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newInfo/".$page->page_id) ?>">Add Info Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newOther/".$page->page_id) ?>">Add Other Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newPricing/".$page->page_id) ?>">Add Pricing Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newWhyUs/".$page->page_id) ?>">Add Why-Us Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newAbout/".$page->page_id) ?>">Add About-Us Section</a>
+                    <a class="collapse-item" href="<?= base_url("content/newTestimonial/".$page->page_id) ?>">Add Testimonial</a>
                     
                     <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Home Page Content</a>
    
@@ -122,26 +126,7 @@
             </div>
         </li>
         <?php endforeach; ?>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages4"
-                aria-expanded="true" aria-controls="collapsePages3">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Pricing</span>
-            </a>
-            <div id="collapsePages4" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Edit Home Page Content:</h6>
-                    <a class="collapse-item" href="<?= url_to("Content::newHero")?>">Add Hero</a>
-                    <a class="collapse-item" href="<?= url_to("Content::newFeature")?>">Add Feature Section</a>
-                    <a class="collapse-item" href="<?= url_to("Content::newInfo")?>">Add Info Section</a>
-                    <a class="collapse-item" href="<?= url_to("Content::newOther")?>">Add Other Section</a>
-                    <a class="collapse-item" href="<?= url_to("Content::newPricing")?>">Add Pricing Section</a>
-                    
-                    <a class="collapse-item" href="<?= url_to("Content::index") ?>">View All Home Page Content</a>
-   
-                </div>
-            </div>
-        </li>
+       
 
         
 

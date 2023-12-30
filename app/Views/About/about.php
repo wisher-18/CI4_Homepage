@@ -4,67 +4,18 @@
 <?= $this->section("content") ?>
 
 <?= $this->include("home/navbar") ?>
-</div>
 <style>
-    /* .our-story-img{
-        transition: all 0.2sec ease;
-        cursor: pointer;
-        
-    }
-    .our-story-img:hover{
-        transform: scale(1.1);
-        overflow: hidden;
-    } */
+  .about_section{
+    color: #ffffff;
+  }
+   
 </style>
-<!-- <section class="about-us">
-<div class="homeContainer">
-            <div class="row justify-content-center">
-                <h2><strong>About Us</strong></h2>
-                <div class="col-lg-6 about-para mb-3">
-                <h4>Our Story</h4>
-            <h3>Icredible Journey</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Possimus dicta placeat eos tenetur voluptatibus. 
-                Obcaecati vitae non optio eligendi libero ipsa fuga temporibus quod, nihil suscipit aliquam modi asperiores quo?
-            </p>
-            <div class="buttn">
-                <button class="btn btn-outline-dark">Our Team</button>
-                <button class="btn btn-outline-dark active">Learn More</button>
-            </div>
-                </div>
-                <div class="our-story-img col-lg-6 mb-3">
-                <img class="col-12" src="public/images/our-story.jpg" alt="about-us">
-                </div>
-            </div>
-            <hr>
-            <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <img class="col-12" src="public/images/about-us.jpg" alt="about-us">
-                </div>
+</div>
 
-                <div class="col-lg-6 about-para mb-3">
-                <h4>Our Team</h4>
-            <h3>A House of Creative and Intelligent</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Possimus dicta placeat eos tenetur voluptatibus. 
-                Obcaecati vitae non optio eligendi libero ipsa fuga temporibus quod, nihil suscipit aliquam modi asperiores quo?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus deserunt veritatis doloremque nobis quidem adipisci reprehenderit, esse repellat dignissimos, soluta ducimus a ullam, iste neque ipsa. Fugit, quidem consequatur?
-            </p>
-            <div class="buttn">
-                <button class="btn btn-outline-dark">Our Team</button>
-                <button class="btn btn-outline-dark active">Learn More</button>
-            </div>
-                </div>
-                
-            </div>
-        </div>
-
-
-</section> -->
 <section class="about_section layout_padding">
     <div class="container  ">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 style="color: #ffffff;">
           About <span>Us</span>
         </h2>
         <p>
@@ -79,7 +30,7 @@
         </div>
         <div class="col-md-6">
           <div class="detail-box">
-            <h3>
+            <h3  style="color: #ffffff;">
               We Are Finexo
             </h3>
             <p>

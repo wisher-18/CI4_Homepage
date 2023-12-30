@@ -6,7 +6,11 @@
     <title><?= $this->renderSection("title") ?></title>
     <link rel="stylesheet" href="<?= base_url() ?>public/css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url() ?>public/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/style.scss">
     <link rel="stylesheet" href="<?= base_url() ?>public/css/all.css">
+    <link rel="stylesheet" href="<?= base_url("public/css/owl.carousel.min.css") ?>">
+    <link rel="stylesheet" href="<?= base_url() ?>public/css/owl.theme.default.min.css">
+    <script src="<?= base_url("public/js/jquery.min.js") ?>"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet"
@@ -25,6 +29,8 @@
 
     <script src="<?= base_url() ?>public/js/bootstrap.bundle.js"></script>
     <script src="<?= base_url() ?>public/js/index.js"></script>
+
+    <script src="<?= base_url() ?>public/js/owl.carousel.min.js"></script>
     
 </body>
 </html>

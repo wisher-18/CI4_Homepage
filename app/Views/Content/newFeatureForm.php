@@ -45,7 +45,7 @@
                     <!-- Remaining form fields -->
                     <input type="hidden" name="feature_data" id="feature_data" value="">
                     <input type="hidden" name="content_section" id="content_section" value="features">
-                    <input type="hidden" name="pages_id" id="pages_id" value="15">
+                    <input type="hidden" name="pages_id" id="pages_id" value="<?= $paging->page_id ?>">
 
                     <div class="mb-3">
                         <label for="background_img" class="form-label">Background Image</label><br>

@@ -1,3 +1,4 @@
+<?php if($heroContents): ?>
 <section class="theme-bg banner" style="padding-bottom: 0px; min-height: 615px;">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-indicators" style="top:530px">
@@ -36,3 +37,4 @@
   </div>
 </section>
 </div>
+<?php endif; ?>

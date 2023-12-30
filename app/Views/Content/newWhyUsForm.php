@@ -31,7 +31,7 @@
                     <div class="mb-3">
                         <label for="content" class="form-label">Content</label>
                         <textarea class="form-control" name="content" id="content" cols="30" rows="5"
-                            placeholder="Enter content for Hero Section"></textarea>
+                            placeholder="Enter content for Why-Us Section"></textarea>
                     </div>
 
                     <div class="mb-3">
@@ -46,7 +46,7 @@
                     </div>
 
                     <input type="hidden" name="content_section" id="content_section" value="why_us_section">
-                    <input type="hidden" name="pages_id" id="pages_id" value="15">
+                    <input type="hidden" name="pages_id" id="pages_id" value="<?= $paging->page_id ?>">
 
                     <div class="mb-3">
                         <button class="btn btn-outline-primary" >Submit</button>

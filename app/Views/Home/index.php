@@ -8,12 +8,15 @@
 <?= $this->include("home/homeSection") ?>
 
 <?= $this->include("home/featuresSection") ?>
+<?= $this->include("home/testimonials") ?>
+
 
 
 
 <?= $this->include("home/aboutLong") ?>
 <?= $this->include("home/pricing") ?>
 <?= $this->include("home/whyUs") ?>
+<?= $this->include("home/about") ?>
 
 <?= $this->include("home/aboutShort") ?>
 

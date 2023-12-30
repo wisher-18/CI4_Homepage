@@ -37,48 +37,61 @@ class Content extends BaseController
            
         ]);
     }
-    public function newHero($id){
-      
+    public function newHero($id) {
         $pages = $this->pageModel->findAll();
         $page = $this->pageModel->find($id);
-        
-      
+   
+    
         return view("Content/newHeroForm", ["pages" => $pages, "paging" => $page]);
     }
+
+    public function newAbout($id) {
+        $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
+   
     
-    public function newOther(){
+        return view("Content/newAboutForm", ["pages" => $pages, "paging" => $page]);
+    }
+    
+    
+    
+    public function newOther($id){
 
         $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
 
-        return view("Content/newOtherForm", ["pages" => $pages,
+        return view("Content/newOtherForm", ["pages" => $pages, "paging" => $page
             
            
         ]);
     }
-    public function newFeature(){
+    public function newFeature($id){
 
         $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
 
-        return view("Content/newFeatureForm", ["pages" => $pages,
+        return view("Content/newFeatureForm", ["pages" => $pages, "paging" => $page
             
            
         ]);
     }
 
-    public function newInfo(){
+    public function newInfo($id){
 
         $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
 
-        return view("Content/newInfoForm", ["pages" => $pages,
+        return view("Content/newInfoForm", ["pages" => $pages, "paging" => $page
             
            
         ]);
     }
 
-    public function newPricing(){
+    public function newPricing($id){
         $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
 
-        return view("Content/newPricingForm", ["pages" => $pages,
+        return view("Content/newPricingForm", ["pages" => $pages, "paging" => $page
             
            
         ]);
@@ -86,12 +99,19 @@ class Content extends BaseController
 
     }
 
-    public function newWhyUs(){
+    public function newWhyUs($id){
         $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
 
-        return view("Content/newWhyUsForm", ["pages" => $pages]);
+        return view("Content/newWhyUsForm", ["pages" => $pages, "paging" => $page]);
 
 
+    }
+    public function newTestimonial($id){
+        $pages = $this->pageModel->findAll();
+        $page = $this->pageModel->find($id);
+
+        return view("Content/newTestimonialsForm", ["pages" => $pages, "paging" => $page]);
     }
 
 
@@ -189,7 +209,7 @@ class Content extends BaseController
         
             $this->model->delete($id);
 
-            return redirect()->to("content/index")->with("message","Page deleted");
+            return redirect()->to("content/index")->with("message","Content deleted");
     }
 
     public function edit($id){

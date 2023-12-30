@@ -1382,3 +1382,57 @@ in APPPATH\Views\Content\newHeroForm.php on line 99.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 15:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 15:03:17 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_1.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 15:03:17 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_2.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 15:03:17 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile_3.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 15:03:17 --> Attempt to read property "page_id" on null
+in APPPATH\Views\Content\newHeroForm.php on line 99.
+ 1 APPPATH\Views\Content\newHeroForm.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "page_id" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\Content\\newHeroForm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 5 APPPATH\Controllers\Content.php(46): view('Content/newHeroForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

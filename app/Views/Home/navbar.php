@@ -17,11 +17,12 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <?php foreach ($pages as $page): ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="<?= url_to($page->page_title) ?>">
+                                <a class="nav-link" aria-current="page" href="<?= base_url("/pages/".$page->slug) ?>">
                                     <?= $page->page_title ?>
                                 </a>
                             </li>
                         <?php endforeach; ?>
+
                     </ul>
                 </div>
             </div>
