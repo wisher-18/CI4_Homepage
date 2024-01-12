@@ -22,7 +22,6 @@
                 </div>
             <?php endif ?>
             <h2 class="mb-4">All Content</h2>
-            <a href="<?= route_to("Content::new") ?>" class="btn btn-primary mb-4">Add Content</a>
 
             <div class="table-responsive">
                 <table class="table table-hover table-bordered border-primary">

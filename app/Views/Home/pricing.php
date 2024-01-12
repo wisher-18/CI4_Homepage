@@ -74,7 +74,7 @@
 <section class="pricing">
   <div class="container">
     <h2>Our Plans</h2>
-    <div class="row">
+    <div class="row justify-content-center">
       <?php foreach ($pricingContents as $content): ?>
         <div class="col-md-4">
           <div class="pricing-plan feature-module">

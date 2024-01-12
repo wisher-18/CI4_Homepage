@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\ContentModel;
 use App\Models\PageModel;
 use App\Models\SectionModel;
@@ -11,85 +12,117 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 class Home extends BaseController
 {
     private ContentModel $contentModel;
-    
+
     public function __construct()
-        {
-           
-        }
+    {
+
+    }
 
     public function index()
     {
         $contentModel = new ContentModel();
         $pageModel = new PageModel;
-            $pages = $pageModel->findAll();
+        $pages = $pageModel->findAll();
 
-            $heroContent = $contentModel->getHeroContent();
-            $otherSection = $contentModel->getOtherSectionContent();
-            $featureContent = $contentModel->getFeatureContent();
-            $infoContents = $contentModel->getInfoSectionContent();
-            $pricingContents = $contentModel->getPricingSectionContent();
-            $whyUsContents = $contentModel->getWhyUsSectionContent();
-            $aboutUsContents = $contentModel->getAboutUsContent();
-            $testimonialContents = $contentModel->getTestimonialContent();
-        return view('Home/index',["pages" => $pages, "heroContents" => $heroContent, "otherSections" => $otherSection,
-        "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents,
-        "whyUsContents" => $whyUsContents, "aboutUsContents" => $aboutUsContents, "testimonialContents" => $testimonialContents]);
+        $heroContent = $contentModel->getHeroContent();
+        $otherSection = $contentModel->getOtherSectionContent();
+        $featureContent = $contentModel->getFeatureContent();
+        $infoContents = $contentModel->getInfoSectionContent();
+        $pricingContents = $contentModel->getPricingSectionContent();
+        $whyUsContents = $contentModel->getWhyUsSectionContent();
+        $aboutUsContents = $contentModel->getAboutUsContent();
+        $testimonialContents = $contentModel->getTestimonialContent();
+        $contactUsContents = $contentModel->getContactUsContent();
+
+       
+        return view('Home/index', [
+            "pages" => $pages,
+            "heroContents" => $heroContent,
+            "otherSections" => $otherSection,
+            "featureContent" => $featureContent,
+            "infoContents" => $infoContents,
+            "pricingContents" => $pricingContents,
+            "whyUsContents" => $whyUsContents,
+            "aboutUsContents" => $aboutUsContents,
+            "testimonialContents" => $testimonialContents,
+            "contactUsContents" => $contactUsContents
+        ]);
     }
-    public function features(){
+    public function features()
+    {
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
         return view('Features/features', ["pages" => $pages]);
     }
-    public function about(){
+    public function about()
+    {
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
         return view('About/about', ["pages" => $pages]);
     }
-    public function contact(){
+    public function contact()
+    {
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
-        return view('Contact/contact',["pages" => $pages]);
+        return view('Contact/contact', ["pages" => $pages]);
     }
-    public function testimonials(){
+    public function testimonials()
+    {
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
-        return view('Testimonials/testimonials',["pages" => $pages]);
+        return view('Testimonials/testimonials', ["pages" => $pages]);
     }
-    public function pricing(){
+    public function pricing()
+    {
         $pageModel = new PageModel;
         $pages = $pageModel->findAll();
-        return view('Pricing/pricing',["pages" => $pages]);
+        return view('Pricing/pricing', ["pages" => $pages]);
     }
 
-   
+    private function sendTestEmail()
+    {
+
+        $email = \Config\Services::email();
+
+        $email->setTo("recipient@example.com");
+        $email->setSubject("Test Email");
+        $email->setMessage("Hello from <i>CodeIgniter</i>");
+        if ($email->send()) {
+            echo "Email Sent";
+        } else {
+            echo "Email not sent";
+        }
+    }
+
+
 
     //To create data
     // public function create(){
-        // $postData = new Section($this->request->getPost());
-        // $postImage = $this->request->getFile("section_image");
-        // $newName = $postImage->getRandomName();
-        // $postImage->move("public/section_images/", $newName);
-        // $postData->section_image = $newName;
-        // $id = $this->model->protect(false)->insert($postData);
+    // $postData = new Section($this->request->getPost());
+    // $postImage = $this->request->getFile("section_image");
+    // $newName = $postImage->getRandomName();
+    // $postImage->move("public/section_images/", $newName);
+    // $postData->section_image = $newName;
+    // $id = $this->model->protect(false)->insert($postData);
 
-        // if($id === false){
-        //     return redirect()->back()->with("errors",
-        //     $this->model->errors())->withInput();
-        // }
-        // return redirect()->to("section/$id")->with("message","Article Saved");
+    // if($id === false){
+    //     return redirect()->back()->with("errors",
+    //     $this->model->errors())->withInput();
+    // }
+    // return redirect()->to("section/$id")->with("message","Article Saved");
 
 
-        // if($this->request->getPost()){
-        //     $postData = $this->request->getPost();
-        //     $postImage = $this->request->getFile("section_image");
-        //     $newName = $postImage->getRandomName();
-        //     $postImage->move("public/section_images/", $newName);
-        //     $postData["section_image"] = $newName;
-        //     $this->model->insert($postData);
-        //     return redirect()->to("section/new")->with("message", "Article saved.");
-           
-        // }
-        // }
+    // if($this->request->getPost()){
+    //     $postData = $this->request->getPost();
+    //     $postImage = $this->request->getFile("section_image");
+    //     $newName = $postImage->getRandomName();
+    //     $postImage->move("public/section_images/", $newName);
+    //     $postData["section_image"] = $newName;
+    //     $this->model->insert($postData);
+    //     return redirect()->to("section/new")->with("message", "Article saved.");
+
+    // }
+    // }
     //}
 
     // public function show($id){
@@ -118,5 +151,5 @@ class Home extends BaseController
     //         throw new PageNotFoundException("Article with id $id not found.");
     //     }
     //     return $section;
- }
+}
 

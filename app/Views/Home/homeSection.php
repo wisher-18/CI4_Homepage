@@ -1,11 +1,7 @@
 <?php if($heroContents): ?>
 <section class="theme-bg banner" style="padding-bottom: 0px; min-height: 615px;">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-    <div class="carousel-indicators" style="top:530px">
-      <?php foreach ($heroContents as $key => $heroContent): ?>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $key ?>" class="<?= $key === 0 ? 'active' : '' ?>" aria-current="true" aria-label="Slide <?= $key + 1 ?>"></button>
-      <?php endforeach; ?>
-    </div>
+    
     <div class="carousel-inner">
       <?php foreach ($heroContents as $key => $heroContent): ?>
         <div class="carousel-item <?= $key === 0 ? 'active' : '' ?>">

@@ -22,10 +22,11 @@ $routes->get("/page/delete/(:num)", "Pages::delete/$1");
 $routes->get("page/(:num)/edit", "Pages::edit/$1");
 $routes->post("page/update/(:num)", "Pages::update/$1");
 
+
 $routes->get("/content/new", "Content::new");
 $routes->post("/content/new", "Content::create");
 $routes->get("/content/(:num)", "Content::show/$1");
-$routes->get("/content/index", "Content::index");
+$routes->get("/content/index/(:num)", "Content::index/$1");
 $routes->get("/content/delete/(:num)", "Content::delete/$1");
 $routes->get("content/edit/(:num)", "Content::edit/$1");
 $routes->post("content/update/(:num)", "Content::update/$1");
@@ -44,10 +45,30 @@ $routes->post("/content/newPricing", "Content::createPricing");
 $routes->get("/content/newWhyUs/(:num)", "Content::newWhyUs/$1");
 $routes->get("/content/newAbout/(:num)", "Content::newAbout/$1");
 $routes->get("/content/newTestimonial/(:num)", "Content::newTestimonial/$1");
+$routes->get("/content/newContactUs/(:num)", "Content::newContactUs/$1");
 
 $routes->get("pages/(:any)", "Pages::showSlug/$1");
 
 
-$routes->get("/admin","Admin::index");
+
 
 service('auth')->routes($routes);
+
+
+$routes->group("admin",["filter"=> "login"], static function($routes){
+
+    $routes->get("/","Admin::index");
+    $routes->get("viewAllUsers", "Admin::viewAllUsers");
+    $routes->get("users/(:num)", "Admin::showUser/$1");
+
+    $routes->match(["get", "post"],"users/(:num)/groups", "Admin::groups/$1");
+    $routes->match(["get", "post"],"users/(:num)/permissions", "Admin::permissions/$1");
+
+});
+
+$routes->group("", static function ($routes){
+    $routes->get("set-password", "Password::setPassword");
+    $routes->post("set-password", "Password::update");
+    
+
+});

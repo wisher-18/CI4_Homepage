@@ -23,6 +23,18 @@
                             </li>
                         <?php endforeach; ?>
 
+                        <?php if(!auth()->loggedIn()): ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url("/login") ?>">Login</a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if(auth()->loggedIn()): ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url("/admin") ?>">Admin</a>
+                            </li>
+                        <?php endif; ?>
+
                     </ul>
                 </div>
             </div>

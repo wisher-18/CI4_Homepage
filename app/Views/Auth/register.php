@@ -61,16 +61,16 @@
                                 
                                 <button type="submit" class="btn btn-primary btn-user btn-block"><?= lang('Auth.register') ?></button>
                                 <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> Register with Google
                                 </a>
                                 <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                     <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
+                                </a> -->
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                <a class="small" href="<?= url_to('login/magic-link') ?>">Forgot Password?</a>
                             </div>
                             <div class="text-center">
                                 

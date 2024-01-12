@@ -45,7 +45,7 @@
                         <!-- Fields for Features Section -->
                         <div class="mb-3">
                             <label for="feature_count" class="form-label">Number of Features</label>
-                            <input type="number" name="feature_count" id="feature_count" class="form-control" min="1" value="1"
+                            <input type="number" name="feature_count" id="feature_count" class="form-control" min="1"
                             value="<?= old("feature_count", $content->feature_count) ?>" onchange="generateFeatureFields()">
                         </div>
 
@@ -83,7 +83,7 @@
                     <!-- Remaining form fields -->
                     <input type="hidden" name="feature_data" id="feature_data" value="">
                     <input type="hidden" name="content_section" id="content_section" value="pricing_section">
-                    <input type="hidden" name="pages_id" id="pages_id" value="15">
+                    
 
                     <div class="mb-3">
                     <label for="primary_btn_name" class="form-label">Name for the primary button:</label>

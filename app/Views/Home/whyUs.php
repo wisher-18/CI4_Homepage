@@ -8,8 +8,9 @@
           Why Choose <span style="color: #00bbf0;">Us</span>
         </h2>
       </div>
+      <div class="row">
       <?php foreach($whyUsContents as $content): ?>
-      <div class="why_container">
+      <div class="why_container col-3">
         <div class="box">
           
           <div class="img-box">
@@ -27,6 +28,8 @@
         </div>
       </div>
       <?php endforeach; ?>
+      </div>
+      
 
     </div>
   </section>

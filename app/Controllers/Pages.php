@@ -59,6 +59,7 @@ class Pages extends BaseController
             $whyUsContents = $this->contentModel->getWhyUsByPage($page->page_id);
             $aboutUsContents = $this->contentModel->getAboutusByPage($page->page_id);
             $testimonialContents = $this->contentModel->getTestimonialByPage($page->page_id);
+            $contactUsContents = $this->contentModel->getContactUsByPage($page->page_id);
        
        
         } else {
@@ -75,7 +76,8 @@ class Pages extends BaseController
         
         return view("pages/slugs", ['pages'=>$pages,'page'=>$page, "heroContents" => $heroContent, "otherSections" => $otherSection,
         "featureContent" => $featureContent, "infoContents" => $infoContents, "pricingContents" => $pricingContents,
-    "whyUsContents" => $whyUsContents, "aboutUsContents" => $aboutUsContents, "testimonialContents" => $testimonialContents]);
+    "whyUsContents" => $whyUsContents, "aboutUsContents" => $aboutUsContents, "testimonialContents" => $testimonialContents,
+    "contactUsContents" => $contactUsContents]);
        }
 
     public function show(){

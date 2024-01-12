@@ -94,5 +94,5 @@
     </div>
 </div>
 
-<?= $this->include("Home/footer") ?>
+
 <?= $this->endSection() ?>

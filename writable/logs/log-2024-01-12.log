@@ -1,0 +1,13 @@
+INFO - 2024-01-12 06:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-12 06:27:31 --> Attempt to read property "user_role" on null
+in APPPATH\Views\layouts\adminDefault.php on line 98.
+ 1 APPPATH\Views\layouts\adminDefault.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user_role" on null', 'C:\\xampp\\htdocs\\hometest\\app\\Views\\layouts\\adminDefault.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hometest\\app\\Views\\layouts\\adminDefault.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/adminDefault', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Content/newHeroForm', [], true)
+ 6 APPPATH\Controllers\Content.php(72): view('Content/newHeroForm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Content->newHero('15')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()

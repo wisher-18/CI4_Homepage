@@ -1,0 +1,49 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Controllers\BaseController;
+use App\Models\PageModel;
+use App\Models\UserModel;
+
+class Password extends BaseController
+{
+    private PageModel $pageModel;
+    public function setPassword(){
+        $pageModel = new PageModel;
+        $pages = $pageModel->findAll();
+        return view("Password/setPassword", ["pages" => $pages]);
+    }
+
+    public function update(){
+        $rules = [
+            "password"=> [
+                "label" => "Password",
+                "rules" => "required|strong_password"
+            ],
+            "password_confirmation" => [
+                "label"=> "Password Confirmation",
+                "rules" => "required|matches[password]"
+            ]
+        ];
+
+        if(!$this->validate($rules)){
+            return redirect()->back()
+            ->with("errors", $this->validator->getErrors());
+        }
+
+        $user = auth()->user();
+
+        $user->password = $this->request->getPost("password");
+
+        $model = new UserModel;
+
+        $model->save($user);
+
+        session()->removeTempdata("magicLogin");
+
+        return redirect()->to("/")
+            ->with("message", "Password changed successfully");
+
+    }
+}

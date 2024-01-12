@@ -32,7 +32,7 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["Total Content", "Total Users", "Total Pages", "Total Banners"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "#4e73df",
@@ -63,7 +63,7 @@ var myBarChart = new Chart(ctx, {
         ticks: {
           maxTicksLimit: 6
         },
-        maxBarThickness: 25,
+        maxBarThickness: 50
       }],
       yAxes: [{
         ticks: {
@@ -71,10 +71,11 @@ var myBarChart = new Chart(ctx, {
           max: 15000,
           maxTicksLimit: 5,
           padding: 10,
+          
           // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '$' + number_format(value);
-          }
+          // callback: function(value, index, values) {
+          //   return '$' + number_format(value);
+          // }
         },
         gridLines: {
           color: "rgb(234, 236, 244)",

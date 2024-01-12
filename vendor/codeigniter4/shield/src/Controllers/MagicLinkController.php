@@ -23,6 +23,7 @@ use CodeIgniter\Shield\Models\LoginModel;
 use CodeIgniter\Shield\Models\UserIdentityModel;
 use CodeIgniter\Shield\Models\UserModel;
 use CodeIgniter\Shield\Traits\Viewable;
+use App\Models\PageModel;
 
 /**
  * Handles "Magic Link" logins - an email-based
@@ -34,6 +35,8 @@ use CodeIgniter\Shield\Traits\Viewable;
  */
 class MagicLinkController extends BaseController
 {
+
+    private PageModel $pageModel;
     use Viewable;
 
     /**
@@ -57,6 +60,9 @@ class MagicLinkController extends BaseController
      */
     public function loginView()
     {
+
+        $pageModel = new PageModel();
+        $pages = $pageModel->findAll();
         if (! setting('Auth.allowMagicLinkLogins')) {
             return redirect()->route('login')->with('error', lang('Auth.magicLinkDisabled'));
         }
@@ -65,7 +71,7 @@ class MagicLinkController extends BaseController
             return redirect()->to(config('Auth')->loginRedirect());
         }
 
-        return $this->view(setting('Auth.views')['magic-link-login']);
+        return $this->view(setting('Auth.views')['magic-link-login'], ["pages"=> $pages]);
     }
 
     /**

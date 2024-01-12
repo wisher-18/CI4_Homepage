@@ -86,20 +86,31 @@
 </div>
 
 <script>
-
+    document.addEventListener("DOMContentLoaded", function () {
+        // Call the function when the page is ready
+        generateFeatureFields();
+    });
 
     function generateFeatureFields() {
         const featureCount = document.getElementById("feature_count").value;
         const generatedFeatureFields = document.getElementById("generated_feature_fields");
         generatedFeatureFields.innerHTML = "";
 
-        for (let i = 1; i <= featureCount; i++) {
-            generatedFeatureFields.innerHTML += `
-           
+        // Default feature heading
+        generatedFeatureFields.innerHTML += `
             <div class="mb-3">
-                <label for="feature_heading${i}" class="form-label">Feature Heading ${i}</label>
-                <input type="text" id="feature_heading${i}" class="form-control" placeholder="Enter heading for feature ${i}">
+                <label for="feature_heading1" class="form-label">Feature Heading 1</label>
+                <input type="text" id="feature_heading1" class="form-control" placeholder="Enter heading for feature 1">
             </div>
+        `;
+
+        // Additional feature headings
+        for (let i = 2; i <= featureCount; i++) {
+            generatedFeatureFields.innerHTML += `
+                <div class="mb-3">
+                    <label for="feature_heading${i}" class="form-label">Feature Heading ${i}</label>
+                    <input type="text" id="feature_heading${i}" class="form-control" placeholder="Enter heading for feature ${i}">
+                </div>
             `;
         }
     }
@@ -111,7 +122,6 @@
 
         for (let i = 1; i <= featureCount; i++) {
             featureData.push({
-
                 feature_heading: document.getElementById(`feature_heading${i}`).value,
             });
         }
@@ -123,5 +133,7 @@
         document.querySelector('form').submit();
     }
 </script>
+
+
 
 <?= $this->endSection() ?>
